@@ -29,7 +29,7 @@ AR = ar
 
 # -O0 is needed so that gcc doesn't "helpfully" optimize the
 # calling convention for static functions.
-CFLAGS = -Wall -Werror -gdwarf-2 -O0 -m32 -fno-stack-protector -fno-omit-frame-pointer -Itraceback/
+CFLAGS = -Wall -Werror -Wno-unused-but-set-variable -gdwarf-2 -O0 -m32 -fno-stack-protector -fno-omit-frame-pointer -Itraceback/
 
 # If you don't do this, GCC4 will emit code which causes main() to align its
 # stack to a 16-byte boundary. This will cause the base pointer for that
